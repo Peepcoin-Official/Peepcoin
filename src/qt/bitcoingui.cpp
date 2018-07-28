@@ -350,7 +350,7 @@ void BitcoinGUI::createActions()
 	cryptobridgeAction->setToolTip(tr("Buy Peepcoin for BTC on CryptoBridge - Coming Soon"));
 	otherExchangesAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Other Exchanges"), this);
 	otherExchangesAction->setToolTip(tr("Other Exchanges currently listing PeepCoin"));
-	
+
 	facebookAction = new QAction(QIcon(":/icons/facebook"), tr("Facebook"), this);
     facebookAction->setToolTip(tr("DAPS Facebook"));
 	twitterAction = new QAction(QIcon(":/icons/twitter"), tr("Twitter"), this);
@@ -382,11 +382,11 @@ void BitcoinGUI::createActions()
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));
-	connect(faqAction, SIGNAL(triggered()), this, SLOT(faqClicked()));
-	connect(faq2Action, SIGNAL(triggered()), this, SLOT(faq2Clicked()));
-	connect(faq3Action, SIGNAL(triggered()), this, SLOT(faq3Clicked()));
-	connect(swapAction, SIGNAL(triggered()), this, SLOT(swapClicked()));
-	connect(whitepaperAction, SIGNAL(triggered()), this, SLOT(whitepaperClicked()));
+    connect(faqAction, SIGNAL(triggered()), this, SLOT(faqClicked()));
+    connect(faq2Action, SIGNAL(triggered()), this, SLOT(faq2Clicked()));
+    connect(faq3Action, SIGNAL(triggered()), this, SLOT(faq3Clicked()));
+    connect(swapAction, SIGNAL(triggered()), this, SLOT(swapClicked()));
+    connect(whitepaperAction, SIGNAL(triggered()), this, SLOT(whitepaperClicked()));
     connect(aboutQtAction, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
     connect(optionsAction, SIGNAL(triggered()), this, SLOT(optionsClicked()));
     connect(toggleHideAction, SIGNAL(triggered()), this, SLOT(toggleHidden()));
@@ -407,7 +407,7 @@ void BitcoinGUI::createActions()
 	connect(cpatexBTCAction, SIGNAL(triggered()), this, SLOT(cpatexBTCClicked()));
 	connect(cpatexDOGEAction, SIGNAL(triggered()), this, SLOT(cpatexDOGEClicked()));
 	connect(otherExchangesAction, SIGNAL(triggered()), this, SLOT(otherExchangesClicked()));
-	
+
 	connect(facebookAction, SIGNAL(triggered()), this, SLOT(facebookActionClicked()));
 	connect(twitterAction, SIGNAL(triggered()), this, SLOT(twitterActionClicked()));
 	connect(discordAction, SIGNAL(triggered()), this, SLOT(discordActionClicked()));
@@ -419,6 +419,7 @@ void BitcoinGUI::createActions()
 	connect(steemitAction, SIGNAL(triggered()), this, SLOT(steemitActionClicked()));
 	connect(instagramAction, SIGNAL(triggered()), this, SLOT(instagramActionClicked()));
 	connect(redditAction, SIGNAL(triggered()), this, SLOT(redditActionClicked()));
+
 }
 
 void BitcoinGUI::createMenuBar()
@@ -462,7 +463,7 @@ void BitcoinGUI::createMenuBar()
     exchanges->addAction(cpatexDOGEAction);
 	exchanges->addSeparator();
 	exchanges->addAction(otherExchangesAction);
-	
+    /*
 	QMenu *socials = appMenuBar->addMenu(tr("Social"));
 	socials->addAction(facebookAction);
 	socials->addAction(twitterAction);
@@ -475,16 +476,16 @@ void BitcoinGUI::createMenuBar()
     socials->addAction(steemitAction);
     socials->addAction(instagramAction);
 	socials->addAction(redditAction);
-	
+    */
     QMenu *help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(openRPCConsoleAction);
 	help->addSeparator();
-	help->addAction(faqAction);
+/*	help->addAction(faqAction);
 	help->addAction(faq2Action);
 	help->addAction(faq3Action);
 	help->addSeparator();
 	help->addAction(whitepaperAction);
-	help->addAction(swapAction);	
+    help->addAction(swapAction);*/
     help->addSeparator();
     help->addAction(aboutAction);
     help->addAction(aboutQtAction);
