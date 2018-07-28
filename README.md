@@ -10,7 +10,9 @@ Expolorer:
 https://chainz.cryptoid.info/pcn/
 
 PoS
+
 Min.stake 2 hours
+
 Pos 100% per year
 
 # Build
